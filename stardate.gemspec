@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'stardate/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'stardate'
+  spec.name          = 'ruby-stardate'
   spec.version       = Stardate::VERSION
   spec.authors       = ['pioz']
   spec.email         = ['enrico@megiston.it']
