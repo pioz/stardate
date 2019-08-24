@@ -2,8 +2,11 @@ require 'stardate/version'
 require 'active_support/time'
 
 module Stardate
+  # Average value of a calendar year, considering the occurrence of leap
+  # years, in accordance with the inferred Stardates in Star Trek FAQ by
+  # Andrew Main
   YEAR_O = 2323
-  YEAR_DURATION = 365.2425 # Average value of a calendar year, considering the occurrence of leap years, in accordance with the inferred Stardates in Star Trek FAQ by Andrew Main
+  YEAR_DURATION = 365.2425
 
   module STime
     def to_stardate

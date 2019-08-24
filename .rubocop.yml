@@ -1,0 +1,8 @@
+inherit_from:
+  - https://raw.githubusercontent.com/Uqido/uqido-linters-config/master/rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.6
+
+Rails:
+  enabled: true
