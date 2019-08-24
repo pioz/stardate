@@ -24,7 +24,7 @@ module Stardate
       s = y / YEAR_DURATION / 24 / 3600
       year = (self / y).to_i
       seconds = ((self - (year * 1000)) / s).to_i
-      d = Time.zone.new(year + YEAR_O) + seconds.seconds
+      Time.zone.new(year + YEAR_O) + seconds.seconds
     end
   end
 end
