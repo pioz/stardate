@@ -1,6 +1,6 @@
 # Stardate
 
-  Calculates the Star Trek stardate and vice versa.
+Calculates the Star Trek stardate and vice versa.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
      => true
 
     2.0.0-p247 :005 > t = Time.now + 400.years
-     => 2413-11-26 18:35:34 +0100 
+     => 2413-11-26 18:35:34 +0100
     2.0.0-p247 :006 > t.to_stardate
      => 90902.89247608284
 
