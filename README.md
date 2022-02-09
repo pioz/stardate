@@ -32,7 +32,7 @@ Or install it yourself as:
 
 ### Change the base date
 
-The default base date is `2023-1-1 = 0.0`. You can switch to the other standard
+The default base date is `2323-1-1 = 0.0`. You can switch to the other standard
 base date `2005-1-1 = 58000.0` with
 
 ```ruby
@@ -42,7 +42,7 @@ base date `2005-1-1 = 58000.0` with
 and switch back with
 
 ```ruby
-  Stardate.set_base_date_to_2023
+  Stardate.set_base_date_to_2323
 ```
 
 ## Contributing
