@@ -9,7 +9,7 @@ module Stardate
 
   BASE_DATE = Struct.new(:year, :stardate).new(2323, 0.0)
 
-  def self.set_base_date_to_2023
+  def self.set_base_date_to_2323
     BASE_DATE.year = 2323
     BASE_DATE.stardate = 0.0
   end

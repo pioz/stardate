@@ -2,13 +2,13 @@ require 'test_helper'
 
 class StardateTest < Minitest::Test
   def test_to_stardate
-    Stardate.set_base_date_to_2023
+    Stardate.set_base_date_to_2323
     time = Time.parse('2364-12-26 03:05:54')
     assert_equal 41_986.0, time.to_stardate
   end
 
   def test_to_time
-    Stardate.set_base_date_to_2023
+    Stardate.set_base_date_to_2323
     assert_equal Time.parse('2364-12-26 03:05:54'), 41_986.0.to_time
   end
 
