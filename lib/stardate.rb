@@ -2,8 +2,10 @@ require 'stardate/version'
 require 'active_support/time'
 
 module Stardate
-  YEAR_O = 2323
-  YEAR_DURATION = 365.2425 # Average value of a calendar year, considering the occurrence of leap years, in accordance with the inferred Stardates in Star Trek FAQ by Andrew Main
+  # Average value of a calendar year, considering the occurrence of leap
+  # years, in accordance with the inferred Stardates in Star Trek FAQ by
+  # Andrew Main
+  YEAR_DURATION = 365.2425
 
   BASE_DATE = Struct.new(:year, :stardate).new(2323, 0.0)
 
@@ -14,7 +16,7 @@ module Stardate
 
   def self.set_base_date_to_2005
     BASE_DATE.year = 2005
-    BASE_DATE.stardate = 58000.0
+    BASE_DATE.stardate = 58_000.0
   end
 
   module STime
@@ -39,5 +41,5 @@ module Stardate
   end
 end
 
-Time.send(:include, Stardate::STime)
-Float.send(:include, Stardate::SFloat)
+Time.include(Stardate::STime)
+Float.include(Stardate::SFloat)
